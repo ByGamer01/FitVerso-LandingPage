@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft, Zap, Shield } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, Shield } from "lucide-react";
 
 export default function PrivacyPage() {
   return (
@@ -10,8 +10,12 @@ export default function PrivacyPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/50 flex items-center justify-center">
-                <Zap className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 rounded-lg bg-primary/20 border border-primary/50 flex items-center justify-center overflow-hidden">
+                <img
+                  src="/logo.png"
+                  alt="FitVerso"
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">
                 Fit<span className="text-primary">Verso</span>
@@ -36,7 +40,10 @@ export default function PrivacyPage() {
               <Shield className="w-8 h-8 text-accent" />
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-              Politica de <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Privacidad</span>
+              Politica de{" "}
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                Privacidad
+              </span>
             </h1>
             <p className="text-muted-foreground">
               Ultima actualizacion: Enero 2025
@@ -55,29 +62,38 @@ export default function PrivacyPage() {
             {/* Data Collection */}
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">1</span>
+                <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
+                  1
+                </span>
                 Datos que Recopilamos
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                La app recopila datos basicos del usuario como nombre de usuario, edad, altura, peso y progreso de entrenamiento con el unico fin de proporcionar las funcionalidades de la aplicacion.
+                La app recopila datos basicos del usuario como nombre de
+                usuario, edad, altura, peso y progreso de entrenamiento con el
+                unico fin de proporcionar las funcionalidades de la aplicacion.
               </p>
             </section>
 
             {/* Data Storage */}
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center text-accent text-sm font-bold">2</span>
+                <span className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center text-accent text-sm font-bold">
+                  2
+                </span>
                 Almacenamiento y Seguridad
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Los datos se almacenan de forma segura mediante Firebase (Google LLC) y no se comparten con terceros, salvo obligacion legal.
+                Los datos se almacenan de forma segura mediante Firebase (Google
+                LLC) y no se comparten con terceros, salvo obligacion legal.
               </p>
             </section>
 
             {/* Sensitive Data */}
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-[var(--xp-cyan)]/20 flex items-center justify-center text-[var(--xp-cyan)] text-sm font-bold">3</span>
+                <span className="w-8 h-8 rounded-lg bg-[var(--xp-cyan)]/20 flex items-center justify-center text-[var(--xp-cyan)] text-sm font-bold">
+                  3
+                </span>
                 Datos Sensibles
               </h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -88,12 +104,18 @@ export default function PrivacyPage() {
             {/* User Rights */}
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-[var(--level-gold)]/20 flex items-center justify-center text-[var(--level-gold)] text-sm font-bold">4</span>
+                <span className="w-8 h-8 rounded-lg bg-[var(--level-gold)]/20 flex items-center justify-center text-[var(--level-gold)] text-sm font-bold">
+                  4
+                </span>
                 Tus Derechos
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                El usuario puede solicitar la eliminacion de su cuenta y datos personales en cualquier momento escribiendo a:{" "}
-                <a href="mailto:fitversosoporte@gmail.com" className="text-primary hover:underline">
+                El usuario puede solicitar la eliminacion de su cuenta y datos
+                personales en cualquier momento escribiendo a:{" "}
+                <a
+                  href="mailto:fitversosoporte@gmail.com"
+                  className="text-primary hover:underline"
+                >
                   fitversosoporte@gmail.com
                 </a>
               </p>
@@ -102,7 +124,9 @@ export default function PrivacyPage() {
             {/* Age Restriction */}
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 rounded-lg bg-destructive/20 flex items-center justify-center text-destructive text-sm font-bold">5</span>
+                <span className="w-8 h-8 rounded-lg bg-destructive/20 flex items-center justify-center text-destructive text-sm font-bold">
+                  5
+                </span>
                 Restriccion de Edad
               </h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -132,5 +156,5 @@ export default function PrivacyPage() {
         </div>
       </footer>
     </main>
-  )
+  );
 }

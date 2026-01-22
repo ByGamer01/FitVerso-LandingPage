@@ -56,7 +56,7 @@ export function CTASection() {
         <div className="relative max-w-xs mx-auto">
           <div className="bg-card rounded-3xl p-2 border border-border card-glow">
             <div className="bg-secondary rounded-2xl aspect-[9/19] overflow-hidden">
-              <img src="/fitness-app-interface-dark-mode-anime-style-charac.jpg" alt="FitVerso App Preview" className="w-full h-full object-cover" />
+              <img src="/fitness-app-interface-dark-mode-anime-style-charac.png" alt="FitVerso App Preview" className="w-full h-full object-cover" />
             </div>
           </div>
 
