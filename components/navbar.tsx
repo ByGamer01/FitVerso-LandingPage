@@ -53,7 +53,7 @@ export function Navbar() {
               Descargar
             </a>
             <Link
-              href="/terms"
+              href="/privacy"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Privacidad
