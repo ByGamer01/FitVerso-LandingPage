@@ -81,8 +81,7 @@ export default function DeletePage() {
             </section>
           </div>
         </div>
-      </div>
-      {/* Datos que se eliminan */}
+        {/* Datos que se eliminan */}
       <section>
         <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
           <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
@@ -146,6 +145,8 @@ export default function DeletePage() {
           </a>
         </p>
       </section>
+      </div>
+      
 
       {/* Simple Footer */}
       <footer className="py-8 border-t border-border">
