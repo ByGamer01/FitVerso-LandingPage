@@ -129,6 +129,12 @@ export function Navbar() {
               >
                 Privacidad
               </Link>
+              <Link
+              href="/delete-account"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Eliminar Cuenta
+            </Link>
               <div className="pt-4 border-t border-border">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.fitverso.app"
