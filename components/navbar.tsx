@@ -58,6 +58,12 @@ export function Navbar() {
             >
               Privacidad
             </Link>
+            <Link
+              href="/delete-account"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Eliminar Cuenta
+            </Link>
           </div>
 
           {/* CTA Button */}
