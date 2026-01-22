@@ -79,72 +79,74 @@ export default function DeletePage() {
                 máximo de 30 días.
               </p>
             </section>
+            {/* Datos que se eliminan */}
+            <section>
+              <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
+                  2
+                </span>
+                Datos que se eliminan
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Una vez confirmada la solicitud, se eliminarán permanentemente
+                los siguientes datos:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>Cuenta de usuario</li>
+                <li>Dirección de correo electrónico</li>
+                <li>Perfil y avatar</li>
+                <li>Progreso de entrenamiento</li>
+                <li>Misiones, estadísticas y logros</li>
+                <li>
+                  Datos almacenados en Firebase Authentication y Firestore
+                </li>
+              </ul>
+            </section>
+
+            {/* Datos que pueden conservarse */}
+            <section>
+              <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
+                  3
+                </span>
+                Datos que pueden conservarse
+              </h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Algunos datos pueden conservarse de forma anonimizada o por
+                obligación legal durante un periodo limitado:
+              </p>
+              <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
+                <li>Registros técnicos mínimos (logs de seguridad)</li>
+                <li>
+                  Datos necesarios para cumplir requisitos legales o prevenir
+                  fraudes
+                </li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                Estos datos no permiten identificar al usuario.
+              </p>
+            </section>
+
+            {/* Contacto */}
+            <section>
+              <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
+                <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
+                  4
+                </span>
+                Contacto
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Si tienes alguna duda sobre la eliminación de datos, puedes
+                contactarnos en:{" "}
+                <a
+                  href="mailto:fitversosoporte@gmail.com"
+                  className="text-primary hover:underline"
+                >
+                  📧 fitversosoporte@gmail.com
+                </a>
+              </p>
+            </section>
           </div>
-          {/* Datos que se eliminan */}
-          <section>
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
-                2
-              </span>
-              Datos que se eliminan
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Una vez confirmada la solicitud, se eliminarán permanentemente los
-              siguientes datos:
-            </p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-              <li>Cuenta de usuario</li>
-              <li>Dirección de correo electrónico</li>
-              <li>Perfil y avatar</li>
-              <li>Progreso de entrenamiento</li>
-              <li>Misiones, estadísticas y logros</li>
-              <li>Datos almacenados en Firebase Authentication y Firestore</li>
-            </ul>
-          </section>
-
-          {/* Datos que pueden conservarse */}
-          <section>
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
-                3
-              </span>
-              Datos que pueden conservarse
-            </h2>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Algunos datos pueden conservarse de forma anonimizada o por
-              obligación legal durante un periodo limitado:
-            </p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
-              <li>Registros técnicos mínimos (logs de seguridad)</li>
-              <li>
-                Datos necesarios para cumplir requisitos legales o prevenir
-                fraudes
-              </li>
-            </ul>
-            <p className="text-muted-foreground leading-relaxed mt-4">
-              Estos datos no permiten identificar al usuario.
-            </p>
-          </section>
-
-          {/* Contacto */}
-          <section>
-            <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2">
-              <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary text-sm font-bold">
-                4
-              </span>
-              Contacto
-            </h2>
-            <p className="text-muted-foreground leading-relaxed">
-              Si tienes alguna duda sobre la eliminación de datos, puedes
-              contactarnos en:{" "}
-              <a
-                href="mailto:fitversosoporte@gmail.com"
-                className="text-primary hover:underline"
-              >
-                📧 fitversosoporte@gmail.com
-              </a>
-            </p>
-          </section>
         </div>
       </div>
 
